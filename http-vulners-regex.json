@@ -722,5 +722,41 @@
   "Ruby on Rails, headers_0_1_2": {
     "alias": "cpe:/a:rubyonrails:ruby_on_rails",
     "regex": "X%-Powered%-By:%s*Phusion[%._ ]Passenger ?/?([%d%.]+)"
+  },
+  "WordPress Login Page, html_0_0": {
+    "alias": "cpe:/a:wordpress:wordpress",
+    "regex": "wp-login.php"
+  },
+  "robots.txt, txt_0_0": {
+    "alias": "cpe:/a:robots:robots",
+    "regex": "User-agent:"
+  },
+  "Sitemap, xml_0_0": {
+    "alias": "cpe:/a:sitemap:sitemap",
+    "regex": "<urlset xmlns="
+  },
+  "Contact Page, html_0_0": {
+    "alias": "cpe:/a:contact:contact",
+    "regex": "<title>Contact"
+  },
+  "Admin Page, html_0_0": {
+    "alias": "cpe:/a:admin:admin",
+    "regex": "<title>Admin"
+  },
+  "User Login Page, html_0_0": {
+    "alias": "cpe:/a:user:login",
+    "regex": "<title>User Login"
+  },
+  "AOLserver, headers": {
+    "alias": "cpe:/a:aol:aolserver",
+    "regex": "Server:%s*AOLserver/?([%d.]+)"
+  },
+  "All in One SEO Pack, html": {
+    "alias": "cpe:/a:semperfiwebdesign:all_in_one_seo_pack",
+    "regex": "<!%-%- All in One SEO Pack ([%d.]+) "
+  },
+  "Apache Traffic Server, headers": {
+    "alias": "cpe:/a:apache:traffic_server",
+    "regex": "Server:%s*ATS/?([%d.]+)"
   }
 }
