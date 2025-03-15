@@ -45,15 +45,26 @@ local registry_tab = {}
 local tab = {}
 local paths = {}
 local default_paths = { 
-        "/",
-        "/index.html",
-        "/index.php",
-        "/wp-admin/login.php",
-        "/about.html",
-        "/about.php",
-        "/500.html",
-        "/theonethatdoesnotexist" -- cause why not
-      }
+    "/",
+    "/index.html",
+    "/index.php",
+    "/wp-admin/login.php",
+    "/wp-login.php",
+    "/wp-admin/",
+    "/wp-content/",
+    "/wp-includes/",
+    "/about.html",
+    "/about.php",
+    "/500.html",
+    "/theonethatdoesnotexist", -- cause why not
+    "/robots.txt",
+    "/sitemap.xml",
+    "/contact.html",
+    "/contact.php",
+    "/admin/",
+    "/login/",
+    "/user/login/"
+}
 
 portrule = shortport.http
 
