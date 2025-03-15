@@ -44,16 +44,7 @@ local patterns = {}
 local registry_tab = {} 
 local tab = {}
 local paths = {}
-local default_paths = { 
-        "/",
-        "/index.html",
-        "/index.php",
-        "/wp-admin/login.php",
-        "/about.html",
-        "/about.php",
-        "/500.html",
-        "/theonethatdoesnotexist" -- cause why not
-      }
+
 
 portrule = shortport.http
 
@@ -85,7 +76,29 @@ function get_paths_from_file(filename)
 
   file = io.open(filename_full, "r")
   if file == nil then
-	stdnse.debug1("Failed to open a file with paths")
+	stdnse.debug1("Flocal default_paths = { 
+    "/",
+    "/index.html",
+    "/index.php",
+    "/wp-admin/login.php",
+    "/wp-login.php",
+    "/wp-admin/",
+    "/wp-content/",
+    "/wp-includes/",
+    "/about.html",
+    "/about.php",
+    "/500.html",
+    "/theonethatdoesnotexist", -- cause why not
+    "/robots.txt",
+    "/sitemap.xml",
+    "/contact.html",
+    "/contact.php",
+    "/admin/",
+    "/login/",
+    "/user/login/"
+}
+
+ailed to open a file with paths")
     return {}
   end
   file:close()
